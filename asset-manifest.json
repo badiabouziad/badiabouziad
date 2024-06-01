@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/badiabouziad/static/css/main.da932c05.css",
+    "main.js": "/badiabouziad/static/js/main.d4346c6e.js",
+    "index.html": "/badiabouziad/index.html",
+    "main.da932c05.css.map": "/badiabouziad/static/css/main.da932c05.css.map",
+    "main.d4346c6e.js.map": "/badiabouziad/static/js/main.d4346c6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da932c05.css",
+    "static/js/main.d4346c6e.js"
+  ]
+}
