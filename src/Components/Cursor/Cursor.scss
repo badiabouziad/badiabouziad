@@ -1,0 +1,34 @@
+/*cursor*/
+
+.invertedcursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    
+    mix-blend-mode: difference;
+    transition: transform .2s;
+    z-index: 1000000000;
+    pointer-events: none;
+   
+  }
+  .magnify-8{
+    transform: scale(8);
+  }
+  .magnify-5{
+    transform: scale(5);
+  }
+  .magnify-3{
+    transform: scale(3);
+  }
+  @media (max-width: 768px) {
+    
+    .invertedcursor {
+      display: none; /* Hide the div on smaller screens */
+    }
+  }
+  

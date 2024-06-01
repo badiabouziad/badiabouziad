@@ -1,0 +1,208 @@
+.logo-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 8px;
+  transition: 0.2s ease-in-out;
+}
+.logo-mode button {
+  background-color: transparent;
+  border: none;
+}
+.logo-mode .logo {
+  color: var(--links-color);
+  font-size: 70px;
+  font-weight: 800;
+}
+.logo-mode .night-btn {
+  display: block;
+}
+.logo-mode .light-btn {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 65px;
+  width: 500px;
+  border-radius: 90px;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 90%;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar ul .nav-link {
+  border-radius: 90px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-family: "poppins";
+  color: var(--links-color);
+}
+.navbar ul .active {
+  background-color: var(--links-color);
+  color: var(--primary-color);
+}
+
+.navbar-on-scroll {
+  /* From https://css.glass */
+  background: var(--navbar-blured-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px var(--navbar-shadow-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.2px);
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 65px;
+  width: 500px;
+  border-radius: 90px;
+}
+
+/* responsivness for 1500px */
+@media (max-width: 1500px) {
+  .navbar {
+    background: var(--navbar-blured-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--navbar-shadow-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border-radius: 900px;
+    position: fixed;
+    bottom: 2%;
+    top: auto;
+  }
+}
+/* responsivness for 900px */
+@media (max-width: 900px) {
+  .logo-mode {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+    transition: 0.2s ease-in-out;
+  }
+  .logo-mode .logo {
+    cursor: default;
+    font-size: 52px;
+    font-weight: 800;
+  }
+  .navbar ul .nav-link {
+    cursor: pointer;
+  }
+}
+/* responsivness for 500px */
+@media (max-width: 500px) {
+  .logo-mode {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 4px;
+    transition: 0.2s ease-in-out;
+  }
+  .logo-mode .logo {
+    cursor: default;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .logo-mode .night-btn {
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .logo-mode .light-btn {
+    font-size: 16px;
+    display: none;
+    cursor: pointer;
+  }
+  .navbar {
+    position: fixed;
+    bottom: 20px;
+    height: 45px;
+    width: 380px;
+    border-radius: 90px;
+    transition: 0.2s ease-in-out;
+    z-index: 100;
+  }
+  .navbar ul {
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .navbar ul .nav-link {
+    padding-right: 14px;
+    cursor: pointer;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .navbar ul .active {
+    background-color: var(--links-color);
+    color: var(--primary-color);
+  }
+  .navbar-on-scroll {
+    /* From https://css.glass */
+    background: var(--navbar-blured-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--navbar-shadow-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border-radius: 900px;
+  }
+}
+/* responsivness for 375px */
+@media (max-width: 375px) {
+  .logo-mode {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    transition: 0.2s ease-in-out;
+  }
+  .logo-mode .logo {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  .logo-mode .night-btn {
+    display: block;
+    font-size: 16px;
+  }
+  .logo-mode .light-btn {
+    font-size: 16px;
+    display: none;
+  }
+  .navbar {
+    width: 300px;
+    border-radius: 9000px;
+  }
+  .navbar ul {
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .navbar-on-scroll {
+    /* From https://css.glass */
+    background: var(--navbar-blured-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--navbar-shadow-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border-radius: 9000px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

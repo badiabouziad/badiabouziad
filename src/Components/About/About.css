@@ -1,0 +1,114 @@
+.about {
+  width: 100%;
+  z-index: 10000000000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navbar-blured-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px var(--navbar-shadow-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.2px);
+  color: var(--links-color);
+  text-align: center;
+}
+.about .container {
+  padding: 2%;
+  width: 1500px;
+}
+.about .container h1 {
+  font-size: 64px;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+.about .container p {
+  font-size: 32px;
+  line-height: 88px;
+}
+.about .learned-tech {
+  margin-bottom: 4%;
+  margin-top: 2%;
+  padding: 16px;
+  background: var(--navbar-blured-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px var(--navbar-shadow-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.2px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .learned-tech .techs {
+  width: 10%;
+}
+
+/* responsovness for 1300px*/
+@media (max-width: 1300px) {
+  .about .container h1 {
+    font-size: 56px;
+  }
+  .about .container p {
+    font-size: 24px;
+    line-height: 76px;
+  }
+}
+/* responsovness for 1100px*/
+@media (max-width: 1100px) {
+  .about .container h1 {
+    font-size: 48px;
+  }
+  .about .container p {
+    font-size: 20px;
+    line-height: 68px;
+  }
+}
+/* responsovness for 900px*/
+@media (max-width: 900px) {
+  .about .continer h1 {
+    font-size: 40px;
+  }
+  .about .continer p {
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
+/* responsovness for 800px*/
+@media (max-width: 820px) {
+  .about .container h1 {
+    font-size: 32px;
+  }
+  .about .container p {
+    font-size: 16px;
+    line-height: 44px;
+  }
+}
+/* responsovness for 670px*/
+@media (max-width: 670px) {
+  .about .container h1 {
+    font-size: 24px;
+  }
+  .about .container p {
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+/* responsovness for 520px*/
+@media (max-width: 520px) {
+  .about .container h1 {
+    font-size: 18px;
+  }
+  .about .container p {
+    font-size: 12px;
+    line-height: 36px;
+  }
+}
+/* responsovness for 410px*/
+@media (max-width: 410px) {
+  .about .container h1 {
+    font-size: 16px;
+  }
+  .about .container p {
+    font-size: 12px;
+    line-height: 32px;
+  }
+}/*# sourceMappingURL=About.css.map */
